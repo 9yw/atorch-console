@@ -1,0 +1,5 @@
+#!/bin/sh
+#exit 0
+    echo -e "Subject: $REMOTE_ADDR 修改了上网设置\nTo: \"Geng\" <gengyuwei@qq.com>\n\n$result\n\n$(date +%F\ %T\ %Z)" | msmtp -t ||\
+    echo -e "Subject: $REMOTE_ADDR 修改了上网设置\nTo: \"Geng\" <gengyuwei@qq.com>\n\n$result\n\n$(date +%F\ %T\ %Z)" | msmtp -C /extra/msmtprc -t
+
